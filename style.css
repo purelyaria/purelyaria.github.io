@@ -2,11 +2,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: The Happy Giraffe;
+    src: url("the-happy-giraffe.regular.ttf")
 }
 
 @font-face {
-    font-family: The Happy Giraffe;
-    src: url("the-happy-giraffe.regular.ttf")
+    font-family: Pique My Interest;
+    src: url("Pique My Interest - TTF.ttf")
 }
 
 html,body{
