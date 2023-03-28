@@ -3,6 +3,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: The Happy Giraffe;
+    src: url(the-happy-giraffe.regular.ttf)
 }
 
 html,body{
