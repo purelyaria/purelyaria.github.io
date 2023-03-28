@@ -1,3 +1,212 @@
-.stylediv {
-    background-color:#FFF6F9;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: The Happy Giraffe;
 }
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
+.container{
+    background: #ffcfd8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar{
+    background: #fff;
+    border-radius: 30px;
+    padding: 70px;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0, 0.4);  
+    position: relative;
+    top: -10%;
+    left: 0%;
+}
+
+
+.navbar ul li {
+    font-family: The Happy Giraffe;
+    list-style: none;
+    display: inline-block;
+    padding: 13px, 35px;
+    margin: 20px;
+    font-size: 25px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+
+a, a:hover, a:visited, a:active {
+  color: inherit;
+  text-decoration: none;
+ }
+
+.navbar ul li::after{
+    content: '';
+    background: #f44566;
+    width: 120%;
+    height: 110%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+
+.navbar ul li:hover{
+    color: #fff;
+}
+
+.navbar ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+
+.content {
+
+}
+
+
+button{
+    background-color: transparent;
+    border: none;
+    outline: none;
+    font-family: Pique My Interest;
+    font-size: 90px;
+    position: relative;
+    left: 70px;
+    top: -20px;
+    color: #ffcfd8;
+    -webkit-text-stroke: 3px #fdf1b4;
+    text-shadow: -1px 1px 2px rgb(173, 173, 173),
+				  1px 1px 2px rgb(173, 173, 173),
+				  1px -1px 0 rgb(173, 173, 173),
+				  -1px -1px 0 rgb(173, 173, 173);
+}
+
+button:hover{
+    animation: animate 1s;
+}
+
+@keyframes animate{
+    25%{
+        transform: scale(0.8,1.3);
+    }
+    50%{
+        transform: scale(1.1,0.8);
+    }
+    75%{
+        transform: scale(0.7,1.2);
+    }
+}
+
+.content p{
+    font-size: 25px;
+    position: relative;
+    left: 150px;
+    top: -20px;
+    color:#777;
+}
+
+
+/* commissions */
+
+.pagecontainer{
+    background: #ffcfd8;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+nav{
+    background: #fff;
+    border-radius: 25px;
+    padding: 70px;
+    height: 0%;
+    position: relative;
+    top: -40%;
+    box-shadow: 0 25px 20px -20px rgba(0,0,0, 0.4);  
+}
+ 
+nav ul li {
+    font-family: The Happy Giraffe;
+    list-style: none;
+    display: inline-block;
+    padding: 13px, 35px;
+    margin: 20px;
+    font-size: 20px;
+    font-weight: 500;
+    color: #777;
+    cursor: pointer;
+    position: relative;
+    z-index: 2;
+    transition: color 0.5s;
+}
+ 
+nav ul li::after{
+    content: '';
+    background: #f44566;
+    width: 120%;
+    height: 110%;
+    border-radius: 30px;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    z-index: -1;
+    opacity: 0;
+    transition: top 0.5s, opacity 0.5s;
+}
+ 
+nav ul li:hover{
+    color: #fff;
+}
+ 
+nav ul li:hover::after{
+    top: 50%;
+    opacity: 1;
+}
+
+.navi_logo h1{
+    font-family: Pique My Interest;
+    font-size: 40px;
+    position: relative;
+    left: 40%;
+    top: -60px;
+    color: #ffcfd8;
+    -webkit-text-stroke:.5px #fdf1b4;
+    text-shadow: -1px 1px 2px rgb(173, 173, 173),
+				  1px 1px 2px rgb(173, 173, 173),
+				  1px -1px 0 rgb(173, 173, 173),
+				  -1px -1px 0 rgb(173, 173, 173);
+    
+}
+/*commission glass*/
+
+.glass{
+    background: white;
+    position: relative;
+    left: 20%;
+    top: 10%;
+    min-height: 80vh;
+    width: 60%;
+}
+
